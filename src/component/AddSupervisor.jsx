@@ -9,7 +9,7 @@ const AddVendor = ({
   const [Supervisor, setSuperVisor] = useState({
     Serial_No: 1,
     Name:"" ,
-    Email_id:"",
+    Email_Id:"",
     Password:"" ,
   });
 
