@@ -52,7 +52,7 @@ const AddVendor = ({
               type="text"
               placeholder="Email Id"
               onChange={(e) => {
-                setSuperVisor((prev) => ({ ...prev, Email_id: e.target.value }));
+                setSuperVisor((prev) => ({ ...prev, Email_Id: e.target.value }));
               }}
             />
             <input
