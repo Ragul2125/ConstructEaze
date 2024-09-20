@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.project {
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5em ;
+    img {
+      width: 3.5em;
+      height: 3.5em;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    .project-name{
+        display: flex;
+        gap: 1em;
+    }
+  }
+}

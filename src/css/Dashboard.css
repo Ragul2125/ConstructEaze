@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    .header{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+        h1{
+            margin-right: auto;
+        }
+        .search-create{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4em;
+            .search{
+                
+                input{
+                    width: 250px;
+                    height: 30px;
+                    border: 1px solid rgb(18, 18, 18);
+                    text-align: center;
+                    outline: none;
+                    padding: 1.5em;
+                }
+                button{
+                    padding: 0.8em 25px;
+                    border: 1px solid #4a40a7 ;
+                    background-color: #4a40a7;
+                    color: white;
+                    outline: none;
+                }
+            }
+            button{
+                padding: 0.8em 25px;
+                border: 1px solid #4a40a7 ;
+                background-color: #4a40a7;
+                border-radius: 3px;
+                color: white;
+                outline: none;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 2em 6em;
+        gap: 1.5em;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+    .dashboard{
+        .header{
+          display: flex;  
+          flex-direction: column;
+          gap: 1em;
+          .search-create{
+            .search{
+                input{
+                    width: 195px;
+                }
+                button{
+                    padding: 0.8em 12px;
+                }
+            }
+            button{
+                padding: 0.8em 12px;
+            }
+          }
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 2em 0em;
+            gap: 1.5em;
+            width: 100vw;
+        }
+
+    }
+}
