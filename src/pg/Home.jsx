@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "../component/SideBar";
-import Mainpg from '../pg/Main-pg.jsx'
+import Master from './Master.jsx'
 import "../css/App.css";
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <div className="home">
         <SideBar />
         <div className="content">
-         <Mainpg/>
+         <Master/>
         </div>
       </div>
     </>

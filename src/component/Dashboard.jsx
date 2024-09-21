@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../css/Dashboard.css";
+import "../css/App.css";
 import CreateProject from "../component/createProject.jsx"
 import logo from "../assets/Image/logo.png";
-import "../css/Project.css"
+import "../css/App.css"
 
 const Dashboard = ({createProject,setCreateProject}) => {
   const [project,setProject]=useState([{Name:"gopal School",site:"pondy"},{Name:"gopal School",site:"pondy"},{Name:"gopal School",site:"pondy"}])

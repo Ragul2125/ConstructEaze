@@ -1,7 +1,7 @@
 import React from "react";
-import "./css/App.css";
-import loginimg from "./assets/Image/login.png";
-import logo from "./assets/Image/logo.png";
+import "../css/App.css";
+import loginimg from "../assets/Image/login.png";
+import logo from "../assets/Image/logo.png";
 const Login = () => {
   return (
     <div className="login-pg">

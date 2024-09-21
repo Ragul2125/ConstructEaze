@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cross from '../assets/svg/cross.svg'
-import '../css/createProject.css'
+import "../css/App.css";
 
 const createProject = ({setCreateProject,setProject}) => {
     const [detials,setDetials]=useState({

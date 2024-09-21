@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/App.css";
 import AddClient from "../component/AddClient.jsx";
 import editIcon from "../assets/svg/edit.svg";
 import deleteIcon from "../assets/svg/Delete.svg";
@@ -262,7 +263,7 @@ const Client = () => {
   };
 
   return (
-    <div className="Client">
+    <div className="Master">
       {addDetails && getAdd()}
       <header>
         <h1>{selectedTable.toUpperCase()} FORM</h1>

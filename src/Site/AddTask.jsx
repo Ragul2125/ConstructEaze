@@ -2,26 +2,21 @@ import React, { useState } from "react";
 import cross from "../assets/svg/cross.svg";
 import "../css/App.css";
 
-const AddSupervisor = ({
-    setSupervisorDetails,
-    setAddDetails
+const AddTask = ({
+    setAddTask,
+    setTodoRows
 }) => {
-  const [Supervisor, setSuperVisor] = useState({
+  const [task, setTask] = useState({
     Serial_No: 1,
-    Name:"" ,
-    Email_Id:"",
-    Password:"" ,
+    Start_Date: "",
+    End_Date:"",
+    Task:""
   });
 
- 
-
   const handleSubmit = () => {
-    setSupervisorDetails((prev) => [...prev, Supervisor]);
-    setAddDetails(false);
-    setSuperVisor((prev) => ({
-      ...prev,
-      Serial_No: clientDetials.length, // Increment Serial_No after submission
-    }));
+    setTodoRows((prev) => [...prev, task]);
+    setAddTask(false);
+    
   };
 
   return (
@@ -32,34 +27,34 @@ const AddSupervisor = ({
             src={cross}
             alt="cross"
             onClick={() => {
-              setAddDetails(false);
+                setAddTask(false);
             }}
           />
         </div>
         <div className="card-content">
           <header>
-            <h2>SUPERVISOR DETAILS</h2>
+            <h2>ADD TASK</h2>
           </header>
           <div className="input-box">
             <input
-              type="text"
-              placeholder="Name"
+              type="date"
+              placeholder="Start Date"
               onChange={(e) => {
-                setSuperVisor((prev) => ({ ...prev, Name: e.target.value }));
+                setTask((prev) => ({ ...prev, Start_Date: e.target.value }));
+              }}
+            />
+            <input
+              type="date"
+              placeholder="End Date"
+              onChange={(e) => {
+                setTask((prev) => ({ ...prev, End_Date: e.target.value }));
               }}
             />
             <input
               type="text"
-              placeholder="Email Id"
+              placeholder="Task"
               onChange={(e) => {
-                setSuperVisor((prev) => ({ ...prev, Email_Id: e.target.value }));
-              }}
-            />
-            <input
-              type="text"
-              placeholder="Password"
-              onChange={(e) => {
-                setSuperVisor((prev) => ({ ...prev, Password: e.target.value }));
+                setTask((prev) => ({ ...prev, Task: e.target.value }));
               }}
             />
           </div>
@@ -72,4 +67,4 @@ const AddSupervisor = ({
   );
 };
 
-export default AddSupervisor;
+export default AddTask;
