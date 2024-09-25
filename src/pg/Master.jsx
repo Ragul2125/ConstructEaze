@@ -132,6 +132,7 @@ const Client = () => {
       Email_Id: "sup_b@example.com",
       Password: "passB456",
     },
+    
   ]);
 
   // Table selector

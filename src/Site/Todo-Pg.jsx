@@ -60,7 +60,7 @@ const TodoPg = () => {
   return (
     <div className="todopg">
       {addTask && <AddTask setAddTask={setAddTask} setTodoRows={setTodoRows} />}
-      <h1>Todo List</h1>
+      <h1>TODO</h1>
       <div className="Search-add">
         <div className="search-bar">
           <input type="text" placeholder="Search" />

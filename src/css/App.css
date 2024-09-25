@@ -430,7 +430,8 @@ p {
 }
 
 @media (max-width: 770px) {
-  .Client {
+  .Master {
+    height: auto;
     .Search-add {
       display: flex;
       flex-direction: column;
@@ -444,6 +445,9 @@ p {
           padding: 0.5em 1em;
         }
       }
+    }
+    .table{
+      width: 85vw;
     }
   }
 }
